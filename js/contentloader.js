@@ -31,6 +31,9 @@ function cssActive(element, index) {
 function scroll() {
     document.getElementById('navigation').setAttribute('style', 'top:0px;');
 }
+
+
 window.onload = function () {
-    cssActive("navigation", 0)
+    cssActive("navigation", 0);
+    load("home.html");
 }
