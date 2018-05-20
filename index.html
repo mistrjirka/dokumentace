@@ -14,17 +14,16 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 
-<body>
+<body onscroll="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/contentloader.js"></script>
-
     <header>
-            <h2 style="margin: 0">Kartisky JS</h3>
+        <h2 style="margin: 0">Kartisky JS</h2>
     </header>
 
     <main>
-        <nav>
-            <ul id="navigation">
+        <nav id="navi">
+            <ul id="navigation" style="top: 47px;">
                 <li onclick="load('home.html'); this.name = 'active'; cssActive('navigation', 0);">Home</li>
                 <li onclick="load('doc.html'); this.name = 'active'; cssActive('navigation', 1);">Documentation</li>
                 <li onclick="load('dow.html'); this.name = 'active'; cssActive('navigation', 2);">Download</li>
@@ -32,7 +31,7 @@
             </ul>
         </nav>
 
-        <article id="content" style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <article class="container" id="content" style="margin-left:25%;padding:1px 16px;height:1000px;overflow-y: scroll">
 
         </article>
     </main>

@@ -14,6 +14,8 @@ ul {
     overflow: auto;
 }
 
+
+
 li {
     display: block !important;
     color: #000 !important;
@@ -29,8 +31,10 @@ li:hover:not(.active) {
 }
 
 header {
+    position: fixed;
+    top:0px;
     width: 100%;
-    background-color:  	#404040;
+    background-color: #404040;
     color: white;
     margin: 0px;
     margin-top: 0px;
