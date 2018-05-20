@@ -17,7 +17,6 @@ function load(a) {
 
 function cssActive(element, index) {
     var el = document.getElementById(element);
-    console.log(el.children.length);
     for (var ind = 0; el.children.length > ind; ind++) {
         element = el.children[ind];
         if (index == ind) {

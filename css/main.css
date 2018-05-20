@@ -23,7 +23,23 @@ li {
     text-decoration: none !important;
 }
 
+#abootstrap {
+    color: #000000;
+    text-decoration: none
+}
 
+#abootstrap{
+    color: black !important;    
+}
+
+#abootstrap{
+    width: 100%
+}
+
+#abootstrap:hover {
+    background-color: #555 !important;
+    color: white !important;
+}
 
 li:hover:not(.active) {
     background-color: #555 !important;
@@ -32,7 +48,7 @@ li:hover:not(.active) {
 
 header {
     position: fixed;
-    top:0px;
+    top: 0px;
     width: 100%;
     background-color: #404040;
     color: white;
