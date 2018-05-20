@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Mùj první web</title>
+    <title>Kartisky JS</title>
     <meta charset='utf-8'>
-    <meta name='description' content='Web pro výuku informatiky'>
-    <meta name='keywords' content='programování, web, grafika, html'>
-    <meta name='author' content='Marta Bechyòová'>
+    <meta name='description' content='Karitsky JS official documentation and downlad page'>
+    <meta name='keywords' content='game, js ,programování, web, html, kartisky, kartisky JS, kartiskyjs, card, cards, card game, WWII'>
+    <meta name='author' content='Jií Svítil'>
     <meta name='robots' content='all'>
     <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
     <link href='obr/favicon.jpg' rel='shortcut icon' type='image/png'>
-     
-     <link rel="stylesheet" href="css/main.css" type="text/css">
-</head>
-<body>
-<main>
-<nav>
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="doc.html">Documentation</a></li>
-  <li><a href="dow.html">Download</a></li>
-  <li><a href="about.html">About</a></li>
-</ul>
-</nav>
-<article style="margin-left:25%;padding:1px 16px;height:1000px;">
-  
-</article>
 
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/contentloader.js"></script>
+
+    <header>
+            <h2 style="margin: 0">Kartisky JS</h3>
+    </header>
+
+    <main>
+        <nav>
+            <ul id="navigation">
+                <li onclick="load('home.html'); this.name = 'active'; cssActive('navigation', 0);">Home</li>
+                <li onclick="load('doc.html'); this.name = 'active'; cssActive('navigation', 1);">Documentation</li>
+                <li onclick="load('dow.html'); this.name = 'active'; cssActive('navigation', 2);">Download</li>
+                <li onclick="load('about.html'); this.name = 'active'; cssActive('navigation', 3);">About</li>
+            </ul>
+        </nav>
+
+        <article id="content" style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+        </article>
+    </main>
 </body>
+
 </html>
