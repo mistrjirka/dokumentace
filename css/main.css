@@ -28,20 +28,20 @@ li {
     text-decoration: none
 }
 
-#abootstrap{
-    color: black !important;    
+#abootstrap {
+    color: black !important;
 }
 
-#abootstrap{
+#abootstrap {
     width: 100%
 }
 
-#abootstrap:hover {
+#navid:hover:not(.active) {
     background-color: #555 !important;
     color: white !important;
 }
 
-li:hover:not(.active) {
+.navclass:hover:not(.active) {
     background-color: #555 !important;
     color: white !important;
 }

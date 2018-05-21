@@ -1,1 +1,53 @@
-<h1>For now Empty</h1>
+<h3>Explanation of the system of categories in which are main class methods</h3>
+<p>
+    Methods are categorised by their function. These categories are "add", "get", "do".
+</p>
+<h3>Function which aren't in any category</h3>
+<h4>async function</h4>
+<p>important parameters:
+    <ol>
+        <li>
+            time out - the number of cycles to be performed before the time out function is called
+        </li>
+        <li> 
+            interval - number of cycles per second
+        </li>
+        <li>
+            time out function - function called when number of cycles is bigger then a time out
+        </li>
+    </ol>
+</p>
+<pre><code class="javascript">
+function async ( /**/ ) {
+    var interval;
+    var time;
+    var timeOutCallBack;
+    var args = arguments;
+    if (typeof args[0] == "number" && typeof args[1] == "number" && typeof args[2] == "function") {
+        time = args[0];
+        interval = args[1]
+        timeOutCallBack = args[2]
+        var timeWatchdog = 0;
+        var interval = setInterval(function () {
+            for (var i = 0; i < args.length; i++) {
+                if (i != 0 && i != 1 && i != 2) {
+                    if (typeof args[i] == "function") {
+                        if (args[i](timeWatchdog) == true) {
+                            clearInterval(interval);
+                        }
+                    }
+                }
+            }
+
+            if (time <= timeWatchdog) {
+                clearInterval(interval);
+                timeOutCallBack();
+            } else {
+                timeWatchdog = timeWatchdog + 1;
+            }
+        }, interval)
+    } else {
+        console.error("wrong arguments")
+    }
+
+}</code></pre>

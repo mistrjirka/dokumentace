@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 
@@ -25,16 +28,16 @@
     <main>
         <nav id="navi">
             <ul id="navigation" style="top: 58px;">
-                <li onclick="load('home.html'); this.name = 'active'; cssActive('navigation', 0);">Home</li>
-                <li onclick="load('doc.html'); this.name = 'active'; cssActive('navigation', 1);" class="dropdown"><a id="abootstrap" class="dropdown-toggle" data-toggle="dropdown" href="?">Documentation<span class="caret"></span></a>
+                <li class="navclass" onclick="load('home.html'); this.name = 'active'; cssActive('navigation', 0);">Home</li>
+                <li id="navid" onclick="load('doc.html'); this.name = 'active'; cssActive('navigation', 1);" class="dropdown"><a id="abootstrap" class="dropdown-toggle" data-toggle="dropdown" href="?">Documentation<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li>Add category</li>
-                        <li>Get category</li>
-                        <li>Do category</li>
+                        <li onclick="load('doc/add.html'); this.name = 'active'; cssActive('navigation', 0);">Add category</li>
+                        <li onclick="load('doc/get.html'); this.name = 'active'; cssActive('navigation', 0);">Get category</li>
+                        <li onclick="load('doc/do.html'); this.name = 'active'; cssActive('navigation', 0);">Do category</li>
                     </ul>
                 </li>
-                <li onclick="load('dow.html'); this.name = 'active'; cssActive('navigation', 2);">Download</li>
-                <li onclick="load('about.html'); this.name = 'active'; cssActive('navigation', 3);">About</li>
+                <li class="navclass" onclick="load('dow.html'); this.name = 'active'; cssActive('navigation', 2);">Download</li>
+                <li class="navclass" onclick="load('about.html'); this.name = 'active'; cssActive('navigation', 3);">About</li>
             </ul>
         </nav>
 
