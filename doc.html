@@ -1,12 +1,11 @@
 <h2>Explanation of the system of categories in which are main class methods</h2>
-
 <p>
 	Methods are categorised by their function. These categories are "add", "get", "do".
-</p>
 
-<h2>Function which aren't in any category</h2>
-<h3>async function:</h3>
-<p>
+
+	<h2>Function which aren't in any category</h2>
+	<h3>async function:</h3>
+
 	<h4>description:</h4>
 	This function can make your code asynchronus
 	<h4>important parameters:</h4>
@@ -74,4 +73,35 @@ function async ( /**/ ) {
         console.error("wrong arguments")
     }
 }</code></pre>
+
+	<h3>findIndex function:</h3>
+	<h4>description</h4>
+	This function can find index of item in the array
+	<h4>important parameters</h4>
+	<ol>
+		<li>array - the array in which you want to find index of specific item</li>
+		<li>item - the item which you want to find in Array</li>
+	</ol>
+	<h4>example:</h4>
+	<pre><code class="javascript">
+	var arr = ["a", "b", "c", "d"];
+	findIndex(arr, "a"); //returns 0
+	
+	findIndex(arr, "e"); //returns null
+	
+	findIndex(brr, "a") //ReferenceError: brry is not defined
+	
+	findIndex() // TypeError: array is undefined
+</code></pre>
+	<h4>code:</h4>
+	<pre><code class="javascript">
+function findIndex(array, item) {
+    for (var i = 0; i < array.length; i++) {
+        if (item == array[i]) {
+            return i;
+        }
+    }
+    return null;
+}
+</code></pre>
 </p>

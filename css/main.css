@@ -1,68 +1,68 @@
 body {
-    margin: 0 !important;
-    padding: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
 }
 
 
 
 li {
-    display: block !important;
-    color: #000 !important;
-    padding: 8px 16px !important;
-    text-decoration: none !important;
+	display: block !important;
+	color: #000 !important;
+	padding: 8px 16px !important;
+	text-decoration: none !important;
 }
 
 #abootstrap {
-    color: #000000;
-    text-decoration: none
+	color: #000000;
+	text-decoration: none;
+	width: 100%;
+	color: black !important;
 }
 
-#abootstrap {
-    color: black !important;
-}
 
-#abootstrap {
-    width: 100%
-}
+
 
 #navid:hover:not(.active) {
-    background-color: #555 !important;
-    color: white !important;
+	background-color: #555 !important;
+	color: white !important;
+	cursor: pointer;
 }
 
 .navclass:hover:not(.active) {
-    background-color: #555 !important;
-    color: white !important;
+	background-color: #555 !important;
+	color: white !important;
+	cursor: pointer;
 }
 
 header {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background-color: #404040;
-    color: white;
-    margin: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #404040;
+	color: white;
+	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px
 }
-h2{
+
+h2 {
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
 }
 
-h3{
+h3 {
 	margin-top: 5px !important;
 	margin-bottom: 5px !important;
 }
