@@ -57,3 +57,12 @@ header {
     margin-bottom: 0px;
     padding: 10px
 }
+h2{
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+h3{
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+}

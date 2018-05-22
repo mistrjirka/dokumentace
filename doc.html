@@ -1,23 +1,47 @@
-<h3>Explanation of the system of categories in which are main class methods</h3>
+<h2>Explanation of the system of categories in which are main class methods</h2>
+
 <p>
-    Methods are categorised by their function. These categories are "add", "get", "do".
+	Methods are categorised by their function. These categories are "add", "get", "do".
 </p>
-<h3>Function which aren't in any category</h3>
-<h4>async function</h4>
-<p>important parameters:
-    <ol>
-        <li>
-            time out - the number of cycles to be performed before the time out function is called
-        </li>
-        <li> 
-            interval - number of cycles per second
-        </li>
-        <li>
-            time out function - function called when number of cycles is bigger then a time out
-        </li>
-    </ol>
-</p>
-<pre><code class="javascript">
+
+<h2>Function which aren't in any category</h2>
+<h3>async function:</h3>
+<p>
+	<h4>description:</h4>
+	This function can make your code asynchronus
+	<h4>important parameters:</h4>
+	<ol>
+		<li>
+			time out - the number of cycles to be performed before the time out function is called
+		</li>
+		<li>
+			interval - the number of cycles per second
+		</li>
+		<li>
+			time out function - the function called when number of cycles is bigger then a time out
+		</li>
+	</ol>
+	<h4>optional:</h4>
+	<ol>
+		<li>inifinite amount - the functions (When the function return true, cycle will stop)</li>
+	</ol>
+	<h4>example:</h4>
+	<pre><code class="javascript">
+	var a = false;
+	button.addEventLisenter("click", function(){
+		a = true;
+	});
+	async(1000, 33, function(){// This function is called when a timeout occurs (cycle stops).
+		alert("time out");
+	}, function(){ // This function is called every cycle (in this case 33/s);
+		if(a === true){ 
+			alert("hello world");
+			return true; // This will end cycle
+		}
+	});
+	</code></pre>
+	<h4>code:</h4>
+	<pre><code class="javascript">
 function async ( /**/ ) {
     var interval;
     var time;
@@ -49,5 +73,5 @@ function async ( /**/ ) {
     } else {
         console.error("wrong arguments")
     }
-
 }</code></pre>
+</p>
